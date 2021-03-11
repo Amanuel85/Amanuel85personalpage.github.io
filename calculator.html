@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>calculator</title>
+
+</head>
+
+<body>
+   <p>First Value</p>
+   <input type="text" id="num1" /><br />
+
+   <p>Second Value</p>
+   <input type="text" id="num2" /><br />
+
+   <p>Operations: </p> 
+   <br/>
+   <button onclick="Multiply();">X</button>
+   <button onclick="subrract();">-</button>
+   <button onclick="Addition();">+</button>
+   <br/>
+   <p> Results: </p>
+   <input type="text" id="result" />
+
+
+   <br/>
+
+   <script>
+
+      function Multiply() {
+         var num1 = parseFloat(document.getElementById('num1').value);
+         var num2 = parseFloat(document.getElementById('num2').value);
+
+         {
+            document.getElementById('result').value = num1*num2;
+         }
+
+      }
+      function subrract() {
+         var num1 = parseFloat(document.getElementById('num1').value);
+         var num2 = parseFloat(document.getElementById('num2').value);
+
+         {
+            document.getElementById('result').value = num1-num2;
+         }
+
+      }
+      function Addition() {
+         var num1 = parseFloat(document.getElementById('num1').value);
+         var num2 = parseFloat(document.getElementById('num2').value);
+
+         {
+            document.getElementById('result').value = num1+num2;
+         }
+
+      }
+
+
+   </script>
+
+</body>
+</html>
