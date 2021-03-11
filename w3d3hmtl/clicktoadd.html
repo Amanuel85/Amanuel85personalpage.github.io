@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title></title>
+     <script src="\index.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <form>
+        <label>Input</label><br>
+        <input type="text" id="input" name="input"><br>
+        <br>
+        <label >Output</label><br>
+        <input type="text" id="output"><br>
+        
+        <button onclick="showmessage()">click todisplay</button>
+        
+         <script>
+             function showmessage(){
+                 let input = document.getElementById("input").value;
+                    document.getElementById("output") = input
+                    document.getElementById("input") = ""
+             }
+         </script>
+    </form>
+    </body>
+</html>
